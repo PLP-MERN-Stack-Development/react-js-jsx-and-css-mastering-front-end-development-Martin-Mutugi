@@ -1,70 +1,113 @@
-# React.js and Tailwind CSS Assignment
+##  README.md – Week 3: React + Tailwind Task Manager
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
 
-## Assignment Overview
+#  React + Tailwind Task Manager
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+A responsive React application built with JSX and Tailwind CSS. This project demonstrates reusable component architecture, state management with hooks, API integration, and theme switching.
 
-## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
 
-## Files Included
+##  Features
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+- ✅ Reusable UI components: `Button`, `Card`, `Navbar`, `Footer`
+- ✅ Layout wrapper with consistent navigation and footer
+- ✅ Task Manager with:
+  - Add, complete, delete, and filter tasks
+  - Persistent state using `useState`, `useEffect`, and `localStorage`
+  - Theme switching using `useContext` and Tailwind dark mode
+- ✅ API integration:
+  - Fetches posts from JSONPlaceholder
+  - Displays loading and error states
+- ✅ Responsive design for mobile, tablet, and desktop
+- ✅ Tailwind transitions and dark mode styling
 
-## Requirements
+---
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
-
-## Project Structure
+##  Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/
+│   ├── Button.jsx
+│   ├── Card.jsx
+│   ├── Footer.jsx
+│   ├── Layout.jsx
+│   ├── Navbar.jsx
+│   ├── TaskManager.jsx
+│   └── ThemeContext.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Tasks.jsx
+│   └── ApiData.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+##  Setup Instructions
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+1. **Clone your repository**  
+   ```bash
+   git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Martin-Mutugi.git
+   cd react-week3-task-manager
+   ```
 
-## Resources
+2. Install dependencies  
+   ```bash
+   npm install
+   ```
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+3. **Start the development server**  
+   ```bash
+   npm run dev
+   ```
+
+---
+
+##  Deployment
+
+This project is deployed on Vercel:  
+🔗 [Live Demo](https://your-vercel-url.vercel.app)
+
+---
+
+##  Screenshots
+
+| Home Page | Task Manager | API Data |
+|-----------|--------------|----------|
+| ![Home](screenshots/home.png) | ![Tasks](screenshots/tasks.png) | ![API](screenshots/api.png) |
+
+---
+
+##  Technologies Used
+
+- React.js (Vite)
+- Tailwind CSS
+- React Router
+- JSONPlaceholder API
+- LocalStorage
+- Context API
+
+---
+
+##  Submission Checklist
+
+- [x] All tasks completed
+- [x] Code pushed to GitHub
+- [x] README with setup, screenshots, and live URL
+- [x] Deployed to Vercel
+
+---
+
+##  Author
+
+Built with care by **Martin Mutugi**  
+Founder-level architect, digital skills advocate, and visionary builder.
+
+```
+
+
+
+ 
