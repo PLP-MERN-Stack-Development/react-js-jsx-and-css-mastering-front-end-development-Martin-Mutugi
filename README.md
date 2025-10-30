@@ -1,113 +1,76 @@
-##  README.md – Week 3: React + Tailwind Task Manager
+📘 React Week 3 Assignment: Task Manager + API Explorer
+This project is a responsive, theme-aware React app built with Vite, Tailwind CSS, and React Router. It includes a local task manager, a live API data explorer, and a dark mode toggle — all scaffolded for clarity, reproducibility, and beginner-friendly learning.
+
+🚀 Live Demo
+👉 View the deployed app
+ (Replace with your actual Vercel URL)
+
+🧩 Features
+✅ Task Manager with add, delete, complete, and filter functionality
+✅ Cat Facts API Explorer with pagination and search
+✅ Dark Mode Toggle using React Context
+✅ Persistent Tasks via useLocalStorage hook
+✅ Responsive Design with Tailwind CSS
+✅ Modular Components for reuse and clarity
+
+🛠️ Tech Stack
+Layer
+Tools Used
+Frontend
+React 19, React Router DOM
+Styling
+Tailwind CSS
+State
+React Hooks, Context API
+API
+catfact.ninja
+Build Tool
+Vite
+Deployment
+Vercel
 
 
-#  React + Tailwind Task Manager
-
-A responsive React application built with JSX and Tailwind CSS. This project demonstrates reusable component architecture, state management with hooks, API integration, and theme switching.
-
-
-
-##  Features
-
-- ✅ Reusable UI components: `Button`, `Card`, `Navbar`, `Footer`
-- ✅ Layout wrapper with consistent navigation and footer
-- ✅ Task Manager with:
-  - Add, complete, delete, and filter tasks
-  - Persistent state using `useState`, `useEffect`, and `localStorage`
-  - Theme switching using `useContext` and Tailwind dark mode
-- ✅ API integration:
-  - Fetches posts from JSONPlaceholder
-  - Displays loading and error states
-- ✅ Responsive design for mobile, tablet, and desktop
-- ✅ Tailwind transitions and dark mode styling
-
----
-
-##  Project Structure
-
-```
+📂 Project Structure
 src/
 ├── components/
 │   ├── Button.jsx
 │   ├── Card.jsx
-│   ├── Footer.jsx
-│   ├── Layout.jsx
 │   ├── Navbar.jsx
 │   ├── TaskManager.jsx
 │   └── ThemeContext.jsx
+├── hooks/
+│   └── useLocalStorage.js
 ├── pages/
-│   ├── Home.jsx
-│   ├── Tasks.jsx
 │   └── ApiData.jsx
 ├── App.jsx
-├── main.jsx
-└── index.css
-```
-
----
-
-##  Setup Instructions
-
-1. **Clone your repository**  
-   ```bash
-   git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Martin-Mutugi.git
-   cd react-week3-task-manager
-   ```
-
-2. Install dependencies  
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**  
-   ```bash
-   npm run dev
-   ```
-
----
-
-##  Deployment
-
-This project is deployed on Vercel:  
-🔗 [Live Demo](https://your-vercel-url.vercel.app)
-
----
-
-##  Screenshots
-
-| Home Page | Task Manager | API Data |
-|-----------|--------------|----------|
-| ![Home](screenshots/home.png) | ![Tasks](screenshots/tasks.png) | ![API](screenshots/api.png) |
-
----
-
-##  Technologies Used
-
-- React.js (Vite)
-- Tailwind CSS
-- React Router
-- JSONPlaceholder API
-- LocalStorage
-- Context API
-
----
-
-##  Submission Checklist
-
-- [x] All tasks completed
-- [x] Code pushed to GitHub
-- [x] README with setup, screenshots, and live URL
-- [x] Deployed to Vercel
-
----
-
-##  Author
-
-Built with care by **Martin Mutugi**  
-Founder-level architect, digital skills advocate, and visionary builder.
-
-```
+├── index.css
+└── main.jsx
 
 
+🧪 How to Run Locally
+# Clone the repo
+git clone https://github.com/your-username/week3
 
- 
+# Navigate into the project
+cd week3
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+
+
+📸 Screenshots
+Add screenshots to a screenshots/ folder and embed them here:
+![Task Manager](screenshots/task-manager.png)
+![API Explorer](screenshots/api-data.png)
+![Dark Mode](screenshots/dark-mode.png)
+
+
+🙌 Author
+Martin Mutugi
+ Founder-level architect, MERN stack learner, and digital skills advocate
+ 📍 Nairobi, Kenya
+ 🔗 GitHub Profile
+
