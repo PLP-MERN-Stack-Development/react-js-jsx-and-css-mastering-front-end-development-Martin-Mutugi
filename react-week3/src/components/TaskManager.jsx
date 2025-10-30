@@ -1,22 +1,12 @@
-import { useState, useEffect } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
+import { useState } from "react";
 import Button from "./Button";
 import Card from "./Card";
 
 export default function TaskManager() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useLocalStorage("tasks", []);
   const [input, setInput] = useState("");
   const [filter, setFilter] = useState("all");
-
-  // Load tasks from localStorage on first render
-  useEffect(() => {
-    const saved = localStorage.getItem("tasks");
-    if (saved) setTasks(JSON.parse(saved));
-  }, []);
-
-  // Save tasks to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   function addTask() {
     if (input.trim() === "") return;
@@ -67,7 +57,7 @@ export default function TaskManager() {
               <span
                 onClick={() => toggleTask(task.id)}
                 className={`cursor-pointer ${
-                  task.completed ? "line-through text-gray-500" : ""
+                  task.completed ? "line-through text-gray-500 dark:text-gray-400" : ""
                 }`}
               >
                 {task.text}
